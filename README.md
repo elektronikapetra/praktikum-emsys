@@ -2,21 +2,21 @@
 
 # Pynq Z2 - Fundamental Literature
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled.png)
 
 ## PYNQ-Z2 Features
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%201.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%201.png)
 
 ## Powering Board
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%202.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%202.png)
 
 The PYNQ-Z2 can be powered from the Micro-USB port (J8), an external power supply (**RECOMENDED**), or a battery. The power source is selected by setting jumper J9 (near SW1) to USB or REG (External power regulator/Battery). Use an external power regulator (coax, centre-positive 2.1mm internal-diameter plug) that can be connected to the power jack (DC1). The board supports 7VDC to 15VDC (12V recommended).
 
 ## Boot Mode
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%203.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%203.png)
 
 The PYNQ-Z2 supports MicroSD, Quad SPI Flash, and JTAG boot modes. The boot mode is selected using the Mode jumper (JP1). TO select the boot mode, move the jumper to the appropriate position as indicated by the label on the board.
 
@@ -24,25 +24,25 @@ The PYNQ-Z2 supports MicroSD, Quad SPI Flash, and JTAG boot modes. The boot mode
 
 The PYNQ-Z2 board includes 2 tri-color LEDs, 2 dipswitches, 4 push buttons, and 4 individual LEDs connected to the PL.
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%204.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%204.png)
 
 ### Push-buttons
 
 The four push buttons generate a logic high on the corresponding PL pin when pressed.
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%205.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%205.png)
 
 ### Switches
 
 When the switches are closed (in the “up” position) they generate a logic high on the corresponding PL pins.
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%206.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%206.png)
 
 LEDs
 
 The four individual LEDs are anode-connected tot he Zynq PL via 330-ohms resistors. Applying logic to the appropriate pins will turn on the LEDs.
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%207.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%207.png)
 
 The board also includes LEDs indicating board power, PL programming “done”, and status for USB and Ethernet
 
@@ -50,21 +50,21 @@ The board also includes LEDs indicating board power, PL programming “done”, 
 
 The PYNQ-Z2 has a Realtek RTL8211E-VL PHY supporting 10/100/1000 Ethernet. The PHY is connected to the Zynq RGMII controller. The auxiliary interrupt (INTB) and reset (PHYRSTB) signals connect to MIO pins MIO10 and MIO9, respectively. One of the Zynq PS Ethernet controllers can be connected to the appropriate MIO pins to control the Ethernet port.
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%208.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%208.png)
 
 ## Pmod
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%209.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%209.png)
 
 Pynq has two Pmod interfaces. Each 12-pin Pmod port provides two 3.3V VCC signals (pins 6 and 12), two Ground signals (pins 5 and 11), and eight logic signals. The VCC and Ground pins can deliver up to 1A of current.
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%2010.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%2010.png)
 
 Pmod A pins are shared with the Raspberry Pi header
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%2011.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%2011.png)
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%2012.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%2012.png)
 
 ## Jupyter Notebook
 
@@ -74,7 +74,7 @@ After the board powered up, access the jupyter notebook from your browser:
 
 ***notes: the board and your laptop must be in the same network**
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%2013.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%2013.png)
 
 # Pynq Overlay
 
@@ -82,7 +82,7 @@ After the board powered up, access the jupyter notebook from your browser:
 
 The Xilinx® Zynq® All Programmable device is an SOC based on a dual-core ARM® Cortex®A9 processor (referred to as the *Processing System* or **PS**), integrated with FPGA fabric (referred to as *Programmable Logic* or **PL**). The *PS* subsystem includes a number of dedicated peripherals (memory controllers, USB, Uart, IIC, SPI etc) and can be extended with additional hardware IP in a *PL* Overlay.
 
-![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%2014.png)
+![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%2014.png)
 
 Overlays, or hardware libraries, are programmable/configurable FPGA designs that extend the user application from the Processing System of the Zynq into the Programmable Logic. Overlays can be used to accelerate a software application or to customize the hardware platform for a particular application.
 
@@ -115,7 +115,7 @@ As the base overlay includes IP for the peripherals on a board, it can also be u
 
 In the case of general-purpose interfaces, for example, Pmod or Arduino headers, the base overlay may include a PYNQ MicroBlaze. A PYNQ MicroBlaze allows control of devices with different interfaces and protocols on the same port without requiring a change to the programmable logic design.
 
-![PYNQ-Z2 diagram](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled%2015.png)
+![PYNQ-Z2 diagram](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%2015.png)
 
 PYNQ-Z2 diagram
 
