@@ -5,49 +5,49 @@
 
  
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled.png)
+![Untitled](Activate%20Built-in%20LED/Untitled.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%201.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%201.png)
 
 1. Goto Part Selection, select: xc7z020clg400-1 as for the PYNQ FPGA. Click “Next” and “Finish”
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%202.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%202.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%203.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%203.png)
 
 1. Create block diagram, Click “Ok”
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%204.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%204.png)
 
 1. Click “+” button on diagram. Select “Zynq7 processing system”
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%205.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%205.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%206.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%206.png)
 
 1. Click “Run Block Automation”. Click “Ok”
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%207.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%207.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%208.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%208.png)
 
 1. Sources > right click > add sources > next > create file > file name: “johnson_counter” > finish > ok > yes
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%209.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%209.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2010.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2010.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2011.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2011.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2012.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2012.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2013.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2013.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2014.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2014.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2015.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2015.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2016.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2016.png)
 
 1. Open “johnson_counter”, replace code with code below: and save
     
@@ -109,29 +109,29 @@ end
 endmodule
 ```
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2017.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2017.png)
 
 1. Open diagram > drag and drop jc2 > click q[3:0] > CTRL + K, set port name to leds > OK
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2018.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2018.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2019.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2019.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2020.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2020.png)
 
 1. Double Left click on “processing_system7_0” > MIO Configuration > I/O Periphereals > GPIO > check EMO GPIO > OK
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2021.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2021.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2022.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2022.png)
 
 1. Sources > Right Click > Add sources > Next > Create File > FIle Type VHDL > file name “clock_divider” > Ok > Finish > Ok > Save
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2023.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2023.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2024.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2024.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2025.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2025.png)
 
 1. Open Clock divider program > replace with code below
 
@@ -174,7 +174,7 @@ end process;
 end bhv;
 ```
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2026.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2026.png)
 
 1. Diagram > Drag and drop “Clock_Divider” on diagram > Ok
 
@@ -184,13 +184,13 @@ Connect wire as shown below
 - FCLK_RESET0_N —> reset on “Clock_Divider”
 - clk_out on “Clock_Divider” —> clk on jc2
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2027.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2027.png)
 
 1. Click “+” on GPIO_0 > Add “Slice”
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2028.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2028.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2029.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2029.png)
 
 1. Connect GPIO_O to Din xlslice_0  > Rename xlslice_0 to left > copy paste the slice 2 times > rename theme to right and stop 
 
@@ -200,45 +200,45 @@ Connect wire as show below:
 - Connect Dout on “right” —> goRight on “jc2_1”
 - Connect Douton “stop” —> stop on “jc2_1”
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2030.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2030.png)
 
 1. Double click on slice “left” and change Din width = 64, Din From = 0, Din Down = 0 and Dout width = 1
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2031.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2031.png)
 
 1. Double click on slice “right” and change Din width = 64, Din From = 1, Din Down = 1 and Dout width = 1
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2032.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2032.png)
 
 Double click on slice “stop” and change Din width = 64, Din From = 2, Din Down = 2 and Dout width = 1
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2033.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2033.png)
 
 1. Now remove AXI Port > Double Click on ZYNQ7 Processing System > choose PS-PL Configuration > AXI NOn Secure Enablement > GP Master AXI Interface > Uncheck the M AXI GP0 interface > Ok 
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2034.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2034.png)
 
 1. Press ‘F6’ of right click and choose ‘validate design’, and will show as image below
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2035.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2035.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2036.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2036.png)
 
 1. Right click on your file name on sources > Create HDL Wrapper > Ok 
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2037.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2037.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2038.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2038.png)
 
 1. Click Run Synthesis’ > Ok
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2039.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2039.png)
 
 1. When synthesis done, choose open synthesis design and click ok
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2040.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2040.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2041.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2041.png)
 
 1. From list below, we can know that led pins are on: R14, P14, N16, M14
 
@@ -452,48 +452,48 @@ set_property -dict { PACKAGE_PIN V7    IOSTANDARD LVCMOS33 } [get_ports { rpi_gp
 
  24. Click “Window” > I/O Ports
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2042.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2042.png)
 
 1. Set LED Ports as shown below
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2043.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2043.png)
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2044.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2044.png)
 
 1. Save constrains > set name to pin_constrains.xdc
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2045.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2045.png)
 
 1. Set I/O Std to LVCM0S33\
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2046.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2046.png)
 
 1. Save constrain (CTRL + S)
 2. Click generate bitstream
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2047.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2047.png)
 
 1. Open “..2_CustomOverlay_GPIO\2_CustomOverlay_GPIO.runs\impl_1” copy bit file
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2048.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2048.png)
 
 1. Open Jupyter Notebook and create folder
 2. Upload the .bit file to the created folder
 3. Rename the bit file same as the Folder Name for example GPIO LED
 4. Back to Vivado and navigate to Diagram section. Then clik File > Export > Export Block Design
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2049.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2049.png)
 
 1. Navigate to “..2_CustomOverlay_GPIO” and select the .tcl file
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2050.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2050.png)
 
 1. Upload .tcl file to jupyter folder and rename same as the folder name
 2. Upload .hwh file to jupyter folder where you can find in “..C:\Users\TELEMATIKA\3_ReadingSwitch\3_ReadingSwitch.gen\sources_1\bd\read_switch\hw_handoff”
 3. Create python file
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2051.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2051.png)
 
 1. Replace the python file with this code
 
-![Untitled](Activate%20Built-in%20LED%208d2d8e9ccafd4126979cc910213c2d4e/Untitled%2052.png)
+![Untitled](Activate%20Built-in%20LED/Untitled%2052.png)
