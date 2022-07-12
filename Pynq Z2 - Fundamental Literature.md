@@ -1,3 +1,5 @@
+#Praktikum EMSYS (Embedded System) - Teknik Elektro Universitas Kristen Petra 
+
 # Pynq Z2 - Fundamental Literature
 
 ![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature%203d6318016d394908b4725176bf6fd297/Untitled.png)
