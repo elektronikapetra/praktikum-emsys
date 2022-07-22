@@ -7,49 +7,49 @@
 
 ![Untitled](Controlling%20Servo/Untitled%201.png)
 
-1. Go to Part Selection, select: xc7z020clg400-1 as for the PYNQ FPGA. Click “Next” and “Finish”
+3. Go to Part Selection, select: xc7z020clg400-1 as for the PYNQ FPGA. Click “Next” and “Finish”
 
 ![Untitled](Controlling%20Servo/Untitled%202.png)
 
-1. Create block diagram, Click “Ok”
+4. Create block diagram, Click “Ok”
 
 ![Untitled](Controlling%20Servo/Untitled%203.png)
 
-1. Click “+” button on diagram. Select “Zynq7 processing system”
+5. Click “+” button on diagram. Select “Zynq7 processing system”
 
 ![Untitled](Controlling%20Servo/Untitled%204.png)
 
-1. Double click on “processing_system7_0” > MIO Configuration > I/O Periphereals > GPIO > check EMO GPIO > OK
+6. Double click on “processing_system7_0” > MIO Configuration > I/O Periphereals > GPIO > check EMO GPIO > OK
 
 ![Untitled](Controlling%20Servo/Untitled%205.png)
 
-1. Click “Run Block Automation”. Click “Ok”
+7. Click “Run Block Automation”. Click “Ok”
 
 ![Untitled](Controlling%20Servo/Untitled%206.png)
 
 ![Untitled](Controlling%20Servo/Untitled%207.png)
 
-1. Add Concat IP for the button switches
+8. Add Concat IP for the button switches
 
 ![Untitled](Controlling%20Servo/Untitled%208.png)
 
-1. Rename the concat IP into button buttons. Double left-click and configure as below:
+9. Rename the concat IP into button buttons. Double left-click and configure as below:
 
 ![Untitled](Controlling%20Servo/Untitled%209.png)
 
-1. Left-Click on ln0[3:0] in “buttons” and press “Ctrl+K” and rename the port name into “buttons”, leave the rest of the configuration
+10. Left-Click on ln0[3:0] in “buttons” and press “Ctrl+K” and rename the port name into “buttons”, leave the rest of the configuration
 
 ![Untitled](Controlling%20Servo/Untitled%2010.png)
 
-1. Make sure the IP block of buttons looks like below:
+11. Make sure the IP block of buttons looks like below:
 
 ![Untitled](Controlling%20Servo/Untitled%2011.png)
 
-1. Connect the dout[3:0] in buttons IP into GPIO_I[63:0] in ZYNQ7_Processing System
+12. Connect the dout[3:0] in buttons IP into GPIO_I[63:0] in ZYNQ7_Processing System
 
 ![Untitled](Controlling%20Servo/Untitled%2012.png)
 
-1. Add IP with the name AXI interconnect and Axi Timer
+13. Add IP with the name AXI interconnect and Axi Timer
 
 ![Untitled](Controlling%20Servo/Untitled%2013.png)
 
@@ -59,32 +59,32 @@
 
 ![Untitled](Controlling%20Servo/Untitled%2016.png)
 
-1. Run Connection Automation and thick all the box, then click “ok”
+14. Run Connection Automation and thick all the box, then click “ok”
 
 ![Untitled](Controlling%20Servo/Untitled%2017.png)
 
-1. Click “pwm0” in the axi_timer_0 IP and click “Ctrl+K”. Rename the port name into servo1, thick the create vector with value from 0 to 0 and leave the remaining configuration as default.
+15. Click “pwm0” in the axi_timer_0 IP and click “Ctrl+K”. Rename the port name into servo1, thick the create vector with value from 0 to 0 and leave the remaining configuration as default.
 
 ![Untitled](Controlling%20Servo/Untitled%2018.png)
 
-1. Double left-click on “Axi Interconnect” and configure as below:
+16. Double left-click on “Axi Interconnect” and configure as below:
 
 ![Untitled](Controlling%20Servo/Untitled%2019.png)
 
-1. The entire IP design will look like this:
+17. The entire IP design will look like this:
 
 ![Untitled](Controlling%20Servo/Untitled%2020.png)
 
-1. Right-click on design sources namely “controlling_servo” and choose create HDL Wrapper and choose this option
+18. Right-click on design sources namely “controlling_servo” and choose create HDL Wrapper and choose this option
 
 ![Untitled](Controlling%20Servo/Untitled%2021.png)
 
-17. Click run synthesis
+19. Click run synthesis
 
 ![Untitled](Controlling%20Servo/Untitled%2022.png)
 
-1. Open the synthesized design
-2. Note the number pin of buttons and arduino pins:
+20. Open the synthesized design
+21. Note the number pin of buttons and arduino pins:
 
 ```markdown
 ## Switches
@@ -298,41 +298,41 @@ BUTTONS PIN = D19, D20, L20, L19
 
 ARDUINO PIN FOR SERVO = V18
 
-1. Click Window toolbar and choose I/O Ports
-2. Configure the package pin same as below, change I/O Std of switches and arduino pin for servo to LVCMOS33
+22. Click Window toolbar and choose I/O Ports
+23. Configure the package pin same as below, change I/O Std of switches and arduino pin for servo to LVCMOS33
 
 ![Untitled](Controlling%20Servo/Untitled%2023.png)
 
-1. Click “Ctrl+S” and click ok. Then save constraint name as “controlling_servo”
+24. Click “Ctrl+S” and click ok. Then save constraint name as “controlling_servo”
 
 ![Untitled](Controlling%20Servo/Untitled%2024.png)
 
-1. Click generate BitStream
+25. Click generate BitStream
 
 ![Untitled](Controlling%20Servo/Untitled%2025.png)
 
-1. Open “..4_ControllingServo\4_ControllingServo.runs\impl_1” and copy bit file
+26. Open “..4_ControllingServo\4_ControllingServo.runs\impl_1” and copy bit file
 
 ![Untitled](Controlling%20Servo/Untitled%2026.png)
 
-1. Open Jupyter Notebook and create folder
-2. Upload the .bit file to the created folder
-3. Rename the bit file same as the Folder Name for example “controlling_servo”
-4. Back to Vivado and navigate to Diagram section. Then clik File > Export > Export Block Design
+27. Open Jupyter Notebook and create folder
+28. Upload the .bit file to the created folder
+29. Rename the bit file same as the Folder Name for example “controlling_servo”
+30. Back to Vivado and navigate to Diagram section. Then clik File > Export > Export Block Design
 
 ![Untitled](Controlling%20Servo/Untitled%2027.png)
 
-1. Navigate to “..4_ControllingServo” and select the .tcl file
+31. Navigate to “..4_ControllingServo” and select the .tcl file
 
 ![Untitled](Controlling%20Servo/Untitled%2028.png)
 
-1. Upload .tcl file to jupyter folder and rename same as the folder name
-2. Upload .hwh file to jupyter folder where you can find in “..4_ControllingServo\4_ControllingServo.gen\sources_1\bd\controlling_servo\hw_handoff”
-3. Create python file
+32. Upload .tcl file to jupyter folder and rename same as the folder name
+33. Upload .hwh file to jupyter folder where you can find in “..4_ControllingServo\4_ControllingServo.gen\sources_1\bd\controlling_servo\hw_handoff”
+34. Create python file
 
 ![Untitled](Controlling%20Servo/Untitled%2029.png)
 
-1. Replace the cell with code as below:
+35. Replace the cell with code as below:
 
 ![Untitled](Controlling%20Servo/Untitled%2030.png)
 
@@ -342,4 +342,4 @@ ARDUINO PIN FOR SERVO = V18
 
 ![Untitled](Controlling%20Servo/Untitled%2033.png)
 
-1. Explore by changing the value of width of period and duty cycle in the set_servo_angle and explain the results!
+35. Explore by changing the value of width of period and duty cycle in the set_servo_angle and explain the results!
