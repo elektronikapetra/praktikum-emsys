@@ -1,5 +1,8 @@
 # Controlling Servo
 
+Before start please attact your servo to PYNQ Z2 like wiring diagram below!
+![Untitled](Controlling%20Servo/wiring_diagram.png)
+
 1. Open Vivado
 2. Create new project, select ‘RTL Project’. Click ‘Next’
 
