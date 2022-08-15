@@ -3,6 +3,9 @@
 
 ![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled.png)
 
+## PYNQ-Z2 Image Download
+https://github.com/Xilinx/PYNQ/releases
+
 ## PYNQ-Z2 Features
 
 ![Untitled](Pynq%20Z2%20-%20Fundamental%20Literature/Untitled%201.png)
