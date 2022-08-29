@@ -181,13 +181,13 @@ end bhv;
 
 Connect wire as shown below
 
-- FCLK_CLK0 —> clk on “Clock_Divider”
+- FCLK_CLK0 —> "clk" on “Clock_Divider”
 - FCLK_RESET0_N —> reset on “Clock_Divider”
 - clk_out on “Clock_Divider” —> clk on jc2
 
 ![Untitled](Activate%20Built-in%20LED/Untitled%2027.png)
 
-1. Click “+” on GPIO_0 > Add “Slice”
+1. Click “+” on GPIO_0 > Click Right Button on GPIO_0 > Add Ip > Add “Slice”
 
 ![Untitled](Activate%20Built-in%20LED/Untitled%2028.png)
 
